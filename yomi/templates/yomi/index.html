@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yomi</title>
+</head>
+<body>
+    <h1>Please type PinYin to get Kanji and Kana</h1>
+    <form action="kana" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
